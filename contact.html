@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Express</title>
+  <link rel="script" href="script.js">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f9;
+      color: #333;
+    }
+    header {
+      background: #203a43;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 40px;
+    }
+    .contact-info, .contact-form {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #203a43;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #203a43;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #023e8a;
+    }
+    .map {
+      margin: 40px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+    }
+    .navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc70;
+}
+
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+    <h1 class="logo">Travel Explorer</h1>
+    <ul class="nav-links">
+      <li><a href="Main.html">Main</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="content.html">Content</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Contact us</h1>
+    <p>Your journey begins with us</p>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Our Office</h2>
+      <p><strong>Address:</strong> Travel Express HQ, Vaghodia, Gujarat, India</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@travelexpress.com</p>
+      <p><strong>Hours:</strong> Mon–Sat, 9 AM – 7 PM</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+        <div class="success-message" id="successMessage">
+          ✅ Thank you! Your message has been sent.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="map">
+    <h2>You can find Us Here</h2>
+      <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.123456789!2d73.333333!3d22.300000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f123456789abc%3A0xabcdef123456789!2sVaghodia%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1712345678901!5m2!1sen!2sin" 
+    width="100%" 
+    height="350" 
+    style="border:0; border-radius:8px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Express - Content Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+    .book-btn {
+      background: #0077b6;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .book-btn:hover {
+      background: #023e8a;
+    }
+    /* Modal styles */
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1000; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+      background: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 70%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+    .close {
+      float: right;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+    h2 {
+      color: #0077b6;
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+      padding: 8px;
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+    .navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc70;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Travel Explorer</h1>
+    <ul class="nav-links">
+      <li><a href="Main.html">Main</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+  <header>
+    <h1>Travel Express</h1>
+    <p>Book your dream journey today</p>
+  </header>
+
+  <div class="content">
+    <p>Explore amazing destinations with us. Click below to see available facilities.</p>
+    <button class="book-btn" id="bookBtn">Book Now</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="facilityModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+
+      <!-- Flight Section -->
+      <h2>✈️ Available Flights</h2>
+      <ul>
+        <li><strong>Vadodara → Delhi</strong> | Departure: 08:30 AM | Price: ₹4,500</li>
+        <li><strong>Vadodara → Mumbai</strong> | Departure: 11:00 AM | Price: ₹3,200</li>
+        <li><strong>Vadodara → Bangalore</strong> | Departure: 02:15 PM | Price: ₹5,800</li>
+        <li><strong>Vadodara → Goa</strong> | Departure: 06:45 PM | Price: ₹4,000</li>
+      </ul>
+
+      <!-- Travel Facility Section -->
+      <h2>🚗 Travel Facilities</h2>
+      <ul>
+        <li>Airport pickup & drop services</li>
+        <li>Luxury buses and private cars for sightseeing</li>
+        <li>Hotel transfers included in packages</li>
+      </ul>
+
+      <!-- Visa Assistance Section -->
+      <h2>🛂 Visa Assistance</h2>
+      <ul>
+        <li>Guidance for tourist and business visas</li>
+        <li>Document verification and application support</li>
+        <li>Fast-track processing for select destinations</li>
+      </ul>
+
+      <!-- Tour Guide Section -->
+      <h2>👨‍💼 Tour Guide Services</h2>
+      <ul>
+        <li>Certified local guides for cultural tours</li>
+        <li>Multilingual guides available on request</li>
+        <li>Personalized itineraries for groups and solo travelers</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Get elements
+    const bookBtn = document.getElementById("bookBtn");
+    const facilityModal = document.getElementById("facilityModal");
+    const closeModal = document.getElementById("closeModal");
+
+    // Show modal when booking button is clicked
+    bookBtn.addEventListener("click", () => {
+      facilityModal.style.display = "block";
+    });
+
+    // Close modal when X is clicked
+    closeModal.addEventListener("click", () => {
+      facilityModal.style.display = "none";
+    });
+
+    // Close modal when clicking outside content
+    window.addEventListener("click", (event) => {
+      if (event.target === facilityModal) {
+        facilityModal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
+</section>
+</body>
+</html>
