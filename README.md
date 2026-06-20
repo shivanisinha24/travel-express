@@ -25,4 +25,7 @@ It provides a clean UI, responsive design, and interactive features like contact
 ##  Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/travel-express.git
+   git clone https://github.com/shivanisinha24/travel-express.git
+
+2. Live Demo Link:
+   
